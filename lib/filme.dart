@@ -1,6 +1,4 @@
-import 'dart:ffi';
-import 'dart:convert';
-import 'package:flutter/services.dart';
+
 
 class Filme
 {
@@ -32,5 +30,11 @@ class Filme
     avaliacao = json["rating"] as double,
     diretor = json["director"] as String;
 
- 
+  Map<String, dynamic> toJson() => {
+        'idImdb': id,
+        'title': nome,
+        'year': ano,
+        'rating': avaliacao,
+        'director': diretor,
+      };
 }
