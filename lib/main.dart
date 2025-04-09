@@ -45,10 +45,33 @@ class MainAPP extends State {
                 ListView.builder(
                   itemCount: filmes.length,
                   itemBuilder: (BuildContext context, index)
-                   {  
-                    return  Text(
-                        filmes[index].nome
-                      );
+                   {
+                    return Column(
+                      
+                      children: [
+                        Container(
+                          width: 300,
+                          height: 100,
+                          margin: EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                          color:const Color.fromARGB(255, 176, 208, 235),
+                          border: Border.all(
+                            color: const Color.fromARGB(255, 173, 187, 199), // Cor da borda
+                            width: 3.0,         // Largura da borda
+                          ),
+                          borderRadius: BorderRadius.circular(8)),
+                        child: Column(
+                            children: [
+                              Text("Id: ${filmes[index].id.toString()}"),
+                              Text("Titulo: ${filmes[index].nome}"),
+                              Text("Lançamento: ${filmes[index].ano.toString()}"),
+                              Text("Avaliação: ${filmes[index].avaliacao.toString()}"),
+                            ],
+                        ),
+                        ),
+                      ],
+                    );  
+                      
                    },)
             )),
     );
