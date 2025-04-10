@@ -1,4 +1,4 @@
-# Exibição em JSON - Flutter
+# Projeto Exibição de Filmes de um arquivo JSON - Flutter
 
 
 ## Integrantes
