@@ -56,8 +56,8 @@ class MainAPP extends State {
                           decoration: BoxDecoration(
                           color:const Color.fromARGB(255, 176, 208, 235),
                           border: Border.all(
-                            color: const Color.fromARGB(255, 173, 187, 199), // Cor da borda
-                            width: 3.0,         // Largura da borda
+                            color: const Color.fromARGB(255, 173, 187, 199), 
+                            width: 3.0,       
                           ),
                           borderRadius: BorderRadius.circular(8)),
                         child: Column(
